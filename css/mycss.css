@@ -1,0 +1,66 @@
+body
+{
+  background-color: lightblue;
+}
+
+table, th, td
+{
+  border: 1px solid black;
+}
+
+table
+{
+  border-collapse:collapse;
+  width:50%;
+  background-color: white;
+}
+
+table.center
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr:nth-child(even)
+{
+  background-color: red;
+}
+
+th
+{
+  background-color:#04aa6d;
+  color: white;
+}
+
+tr:hover
+{
+  background-color: green;
+}
+
+/* tr:hover th
+{
+  background-color: green;
+}
+
+ tr:hover td
+{
+  background-color: yellow;
+} */
+
+/* unvisited link */
+a:link
+{
+  color: red;
+}
+a:visited
+{
+  color: brown;
+}
+a:hover
+{
+  color: green;
+}
+a:active
+{
+  color: blue;
+}

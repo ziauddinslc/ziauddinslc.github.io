@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body onload="pageLoaded()">
+    <p id="para"></p>
+    <input onchange="textChanged()" onmouseover="mouseOver(this)" onmouseout="mouseOut()" type="text" name="" value="" id="text"><br>
+    <button onmouseover="mouseOver(this)" onmouseout="mouseOut()" type="button" name="button" id="button">Buton</button>
+    <script type="text/javascript">
+      function textChanged() {
+        alert("Text changed");
+      }
+
+      function pageLoaded() {
+        alert("The page has been loaded");
+      }
+
+      function mouseOver(object) {
+        if (object.id == "text")
+          document.getElementById('para').innerHTML = "The mouse is over the text box";
+        else
+          document.getElementById('para').innerHTML = "The mouse is over the button";
+
+      }
+
+      function mouseOut() {
+        document.getElementById('para').innerHTML = "The mouse is out";
+      }
+    </script>
+  </body>
+
+</html>
