@@ -1,0 +1,20 @@
+<html>
+
+  <head>
+    <title>Retrieving values</title>
+
+  </head>
+
+  <body>
+    <img src="images/bg1.jpg" id="pic" height="100" title="My favorite car" onClick="getAtt()">
+    <script>
+      function getAtt() {
+        var a = document.getElementById("pic")
+        alert(a.getAttribute("title"));
+        // alert(a.title);
+        // document.write("My favorite car");
+      }
+    </script>
+  </body>
+
+</html>

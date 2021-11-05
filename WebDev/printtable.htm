@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <input type="text" name="text" size="50" id="text" value="Enter a number between 1 and 20 to print a table:" disabled><br>
+    <input type="text" name="number" id="number" value="">
+    <button type="button" name="button" onclick="printTable()">Print Table</button>
+    <p id="para"></p>
+    <script type="text/javascript">
+      function printTable() {
+        var n = parseInt(document.getElementById('number').value);
+        // for (var i = 1; i <= 10; i++) {
+        //   document.getElementById('para').innerHTML += n + " * " + i + " = " + n * i + "<br />";
+        // }
+        var i = 1;
+        do {
+          document.getElementById('para').innerHTML += n + " * " + i + " = " + n * i + "<br />";
+          i++
+        } while (i <= 10);
+
+      }
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td>1st Number:</td>
+        <td><input type="text" id="n1" value=""></td>
+      </tr>
+      <tr>
+        <td>2nd Number:</td>
+        <td><input type="text" id="n2" value=""></td>
+      </tr>
+      <tr>
+        <td>Result:</td>
+        <td><input type="text" id="res" value="" readonly disabled></td>
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="text-align:center"><button type="button" name="button" onclick="myFunction()">Add</button></td>
+      </tr>
+    </table>
+
+    <!-- 1st Number: <input type="text" name="n1" value=""><br>
+    2nd Number: <input type="text" name="n2" value=""><br>
+    Result: <input type="text" name="res" value=""><br> -->
+    <script type="text/javascript">
+      function myFunction() {
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+        var res = parseInt(n1) + parseInt(n2);
+        document.getElementById("res").value = res;
+      }
+    </script>
+  </body>
+
+</html>

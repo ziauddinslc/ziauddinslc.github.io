@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      td {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table class="center">
+      <tr>
+        <td>1st Number: </td>
+        <td> <input type="text" name="n1" id="n1" value=""> </td>
+      </tr>
+      <tr>
+        <td>2nd Number: </td>
+        <td> <input type="text" name="n2" id="n2" value=""> </td>
+      </tr>
+      <tr>
+        <td>Result: </td>
+        <td> <input type="text" name="res" id="res" value="" disabled> </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button class="center" type="button" name="add" id="add" onclick="calc(this.id)">+</button>
+          <button class="center" type="button" name="subtract" id="subtract" onclick="calc(this.id)">-</button>
+          <button class="center" type="button" name="multiply" id="multiply" onclick="calc(this.id)">*</button>
+          <button class="center" type="button" name="divide" id="divide" onclick="calc(this.id)">/</button>
+        </td>
+      </tr>
+    </table>
+    <script type="text/javascript">
+      var res;
+
+      function calc(id) {
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+        if (id == "add") {
+          res = parseFloat(n1) + parseFloat(n2);
+        } else if (id == "subtract") {
+          res = parseFloat(n1) - parseFloat(n2);
+        } else if (id == "multiply") {
+          res = parseFloat(n1) * parseFloat(n2);
+        } else if (id == "divide") {
+          res = parseFloat(n1) / parseFloat(n2);
+        }
+        document.getElementById('res').value = res;
+      }
+    </script>
+
+  </body>
+
+</html>
